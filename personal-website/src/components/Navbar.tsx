@@ -12,7 +12,7 @@ const navItems: NavItem[] = [
 
 function Navbar()  {
     return (
-        <nav className="bg-green-800 text-white px-6 py-4 justify-between items-center flex">
+        <nav className="bg-sandstone text-white px-6 py-4 justify-between items-center flex">
 
             {/* Logo */}
             <div className="text-xl font-bold"> thechescau </div>
