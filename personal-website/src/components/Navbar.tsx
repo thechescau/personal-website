@@ -6,24 +6,25 @@ type NavItem = {
 const navItems: NavItem[] = [
     { label: "Home", href: "#" },
     { label: "About", href: "#about" },
-    { label: "Projects", href: "#projects" },
+    { label: "Skills", href: "#skills" },
+    { label: "Projects", href: "#projects"},
     { label: "Contact", href: "#contact" } 
 ]
 
 function Navbar()  {
     return (
-        <nav className="bg-sandstone text-white px-6 py-4 justify-between items-center flex">
+        <nav className="bg-dawn-pink text-white px-6 py-4 justify-between items-center flex">
 
             {/* Logo */}
-            <div className="text-xl font-bold"> thechescau </div>
+            <div className="text-xl font-bold pl-5 text-dune"> thechescau </div>
 
             {/* Links */}
-            <ul className="flex space-x-6">
+            <ul className="flex space-x-8 pr-5">
                 {navItems.map((item) => (
                     <li key={item.label}>
                         <a
                             href={item.href}
-                            className="hover: text-yellow-300 transition-colors"
+                            className="hover: text-dune transition-colors"
                         >
                             {item.label}
                         </a>

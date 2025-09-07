@@ -12,7 +12,7 @@ function Home() {
                 />
             </div>
             <div className="flex-1 flex flex-col justify-center items-start md:items-start text-left px-8">
-                <h1 className="font-segoe text-5xl md:text-6xl font-bold text-green-900 mb-2">
+                <h1 className="font-segoe text-5xl md:text-6xl font-bold text-dune mb-2">
                     Hi, I'm Chesca!
                 </h1>
 
