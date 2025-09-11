@@ -15,3 +15,21 @@
 .font-segoe { font-family: var(--font-segoe); }
 .font-eurostile { font-family: var(--font-eurostile); }
 .font-roboto { font-family: var(--font-roboto); }
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 10px; /* horizontal bar thickness */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--color-dune); /* brown background */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-dawn-pink); /* white/cream thumb */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #fff; /* pure white on hover */
+}
