@@ -9,24 +9,38 @@ function Skills() {
     return (
         // main skill container
         <section 
-            className="bg-dune py-12 px-6"
+            className="bg-dune py-12 px-20 flex flex-col items-center justify-center"
             id="skills"
         >
             {/* Section title */}
-            <h2 className="font-segoe text-3xl text-dawn-pink font-bold mb-6"> My Skills </h2>
-
+            <div className="flex justify-between gap-4 pb-6 mb-6">
+                {selectedCategory && (
+                    <button
+                        onClick={() => setSelectedCategory(null)}
+                        className="flex items-center justify-center w-10 h-10 rounded-full
+                                    bg-dawn-pink text-dune shadow-md hover:bg-dune 
+                                    hover:text-dawn-pink transition-colors"
+                    >
+                        <ChevronLeft size={28} />
+                    </button>
+                )}
+                <h2 className="font-segoe text-3xl text-dawn-pink font-bold pb-6 mb-6"> 
+                    {selectedCategory ? selectedCategory.name : "My Skills"}
+                </h2>
+            </div>
+            
             {/* Container with fixed height */}
             <div className="w-full">
                
                     {/* If no category is selected, show category cards */}
                     {!selectedCategory ? (
-                        <div className="flex flex-wrap gap-6 justify-center"> 
+                        <div className="flex flex-wrap gap-20 justify-center"> 
                             {categories.map((category) => (
                                 <div
                                     key={category.name}
                                     className="bg-dawn-pink rounded-2xl shadow-md p-6 flex flex-col
                                                justify-center items-center cursor-pointer h-[200px]
-                                               flex-1 min-w-[180px] max-w-[250px]  
+                                               flex-1 min-w-[180px] max-w-[300px]  
                                                hover:scale-105 transition-transform"
                                     onClick={() => setSelectedCategory(category)}
                                 >
@@ -40,17 +54,6 @@ function Skills() {
                         // If category is selected show its skills
                         <div className="w-full flex flex-col">
                             {/* Header row */}
-                            <div className="flex items-center mb-6">
-                                <button
-                                    onClick={() => setSelectedCategory(null)}
-                                    className="flex items-center text-dawn-pink hover:underline"
-                                >
-                                    <ChevronLeft className="mr-2"/> Back
-                                </button>
-                                <h3 className="text-2xl font-bold text-dawn-pink ml-4">
-                                    {selectedCategory.name}
-                                </h3>
-                            </div>
 
                             {/* Flexbox for skill cards */}
                             <div className="flex flex-wrap gap-6 justify-center">
@@ -58,18 +61,20 @@ function Skills() {
                                     <div
                                         key={skill.name}
                                         className="bg-dawn-pink rounded-2xl shadow-md p-4 
-                                                    h-[150px] flex flex-col justify-center items-center
-                                                    flex-1 min-w-[150px] max-w-[220px]"
+                                                    h-[90px] flex flex-col justify-center
+                                                    flex-1 min-w-[200px] max-w-[250px]"
                                     >
-                                        <h4 className="text-lg font-semibold text-dune mb-2 text-center">
-                                            {skill.name}
-                                        </h4>
 
                                         {"percent" in skill ? (
                                             <>
-                                                <span className="text-sm text-dune mb-2">
-                                                    {skill.percent}%
-                                                </span>
+                                                <div className="flex justify-between items-center mb-2">
+                                                    <h4 className="text-base font-semibold text-dune"> {skill.name} </h4>
+                                                    <span className="text-sm text-dune">
+                                                        {skill.percent}%
+                                                    </span>
+                                                </div>
+                                                
+
                                                 {/* Progress bar */}
                                                 <div className="w-full h-2 bg-gray-300 rounded-full">
                                                     <div
@@ -80,7 +85,10 @@ function Skills() {
                                             </>
                                         ) : (
                                             <>
-                                                <skill.icon className="text-dune text-3xl" />
+                                                <div className="flex items-center justify-center gap-3 w-full h-full">
+                                                    <skill.icon className="text-dune text-3xl"/>
+                                                    <span className="text-base font-medium text-dune text-center flex-1">{skill.name}</span>
+                                                </div>
                                             </>
                                         )
                                     

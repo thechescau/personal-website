@@ -1,5 +1,6 @@
-import {IconType} from "react-icons"
-import { SiFigma, SiAdobeillustrator, SiCanva} from "react-icons/si"
+import { IconType } from "react-icons"
+import { FaGithub, FaBitbucket } from "react-icons/fa"
+import { SiFigma, SiAdobeillustrator, SiCanva, SiAdobephotoshop} from "react-icons/si"
 import { MessageCircle, Users } from "lucide-react"
 
 export type ProgrammingSkill = {
@@ -28,7 +29,10 @@ export const categories: Category[] = [
             {name: "React", percent: 50},
             {name: "HTML", percent: 50},
             {name: "CSS", percent: 50},
-            {name: "Javascript", percent: 50}
+            {name: "Javascript", percent: 50}, 
+            {name: "C++", percent: 10},
+            {name: "Java", percent: 10},
+            {name: "Python", percent: 70},
         ]
     },
     {
@@ -36,7 +40,10 @@ export const categories: Category[] = [
         skills: [
             {name: "Figma", icon: SiFigma },
             {name: "Canva", icon: SiCanva },
-            {name: "Illustrator", icon: SiAdobeillustrator}
+            {name: "Photoshop", icon: SiAdobephotoshop},
+            {name: "Illustrator", icon: SiAdobeillustrator},
+            {name: "Github", icon: FaGithub},
+            {name: "Bitbucket", icon: FaBitbucket}
         ]
     },
     {
