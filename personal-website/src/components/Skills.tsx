@@ -1,6 +1,6 @@
 import {useState} from "react"
 import {ChevronLeft} from "lucide-react"
-import {categories, Category} from "../data/skills"
+import {categories, Category} from "../data/skillsData"
 
 function Skills() {
     // track which category card is currently open (null means none)
@@ -13,7 +13,7 @@ function Skills() {
             id="skills"
         >
             {/* Section title */}
-            <div className="flex justify-between gap-4 pb-6 mb-6">
+            <div className="flex justify-between gap-4">
                 {selectedCategory && (
                     <button
                         onClick={() => setSelectedCategory(null)}

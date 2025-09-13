@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './components/Home'
 import Skills from './components/Skills'
+import Projects from './components/Projects'
 
 function App() {
   
@@ -14,6 +15,7 @@ function App() {
       <main className='flex-1'> 
         <Home />
         <Skills />
+        <Projects />
       </main>
       
       <Footer />
