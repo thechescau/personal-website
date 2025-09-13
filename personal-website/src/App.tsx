@@ -4,6 +4,8 @@ import Footer from './components/Footer'
 import Home from './components/Home'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
+import Contact from './components/Contact'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
   
@@ -16,6 +18,13 @@ function App() {
         <Home />
         <Skills />
         <Projects />
+        <BrowserRouter> 
+          <Routes>
+            <Route path="/" element={<Contact/>} />
+            {/* <Route path="/contact-form" element={<ContactForm/>} /> */}
+          </Routes>
+        </BrowserRouter>
+        <Contact />
       </main>
       
       <Footer />

@@ -3,7 +3,10 @@ import { projects} from "../data/projectsData"
 function Projects() {
     return (
         // Section wrapper
-        <section className="py-12">
+        <section 
+            className="py-12 bg-dawn-pink"
+            id="projects"
+        >
             {/* Title container  */}
             <div className="text-center mb-8"> 
                 <h2 className="text-3xl font-bold mb-3"> My Recent Work </h2>

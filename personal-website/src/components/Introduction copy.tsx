@@ -1,6 +1,6 @@
 import chescaImg from "../assets/chesca.png"
 
-function Home() {
+function Introduction() {
     return (
         <main className="bg-dawn-pink flex flex-1 min-h-0">
             {/* Photo */}
@@ -32,4 +32,4 @@ function Home() {
     )
 }
 
-export default Home
+export default Introduction
