@@ -5,6 +5,8 @@
 @theme {
     --color-dune: #3C342E;
     --color-dawn-pink: #ECF0F3;
+    --color-dark-blue: #071739;
+    --color-gray-blue: ##4b6382;
 
     --font-segoe: 'Segoe UI', system-ui, sans-serif;
     --font-eurostile: 'Eurostile', sans-serif;

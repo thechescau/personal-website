@@ -10,25 +10,30 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 function App() {
   
   return (
-    <div className='flex flex-col min-h-screen'>
-      {/* Navigation */}
-      <Navbar />
+    <BrowserRouter>
+      <div className='flex flex-col min-h-screen'>
+        {/* Navigation */}
+        <Navbar />
 
-      <main className='flex-1'> 
-        <Home />
-        <Skills />
-        <Projects />
-        <BrowserRouter> 
+        <main className='flex-1'> 
           <Routes>
-            <Route path="/" element={<Contact/>} />
-            {/* <Route path="/contact-form" element={<ContactForm/>} /> */}
+            <Route 
+              path="/"
+              element={
+                <>
+                  <Home />
+                  <Skills />
+                  <Projects />
+                  <Contact />
+                </>
+              }
+            />
+            {/* <Route path="/contact-form" element={<ContactForm />} /> */}
           </Routes>
-        </BrowserRouter>
-        <Contact />
-      </main>
-      
-      <Footer />
-    </div>
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
   )
 }
 
