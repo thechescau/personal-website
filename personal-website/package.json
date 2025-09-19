@@ -1,5 +1,5 @@
 {
-  "name": "my-website",
+  "name": "personal-website",
   "private": true,
   "homepage": "https://thechescau.github.io/personal-website/",
   "version": "0.0.0",
@@ -9,7 +9,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
