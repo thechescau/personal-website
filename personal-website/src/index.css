@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap'); 
 
 @theme {
     --color-dune: #3C342E;
@@ -8,15 +8,19 @@
     --color-dark-blue: #071739;
     --color-gray-blue: ##4b6382;
 
+    --color-kombu-green: #384531;
+
     --font-segoe: 'Segoe UI', system-ui, sans-serif;
     --font-eurostile: 'Eurostile', sans-serif;
     --font-roboto: 'Roboto', system-ui, sans-serif;
+    --font-inter: 'Inter', system-ui, sans-serif;
 
 }
 
 .font-segoe { font-family: var(--font-segoe); }
 .font-eurostile { font-family: var(--font-eurostile); }
 .font-roboto { font-family: var(--font-roboto); }
+.font-inter { font-family: var(--font-inter); }
 
 .custom-scrollbar::-webkit-scrollbar {
   height: 10px; /* horizontal bar thickness */
