@@ -1,13 +1,15 @@
 {
   "name": "my-website",
   "private": true,
+  "homepage": "https://thechescau.github.io/personal-website/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
