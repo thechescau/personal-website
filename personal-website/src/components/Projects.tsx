@@ -4,7 +4,7 @@ function Projects() {
     return (
         // Section wrapper
         <section 
-            className="py-12 bg-dawn-pink"
+            className="py-12 bg-matcha-green"
             id="projects"
         >
             {/* Title container  */}

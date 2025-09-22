@@ -9,11 +9,11 @@ function Skills() {
     return (
         // main skill container
         <section 
-            className="bg-dune py-12 px-20 flex flex-col items-center justify-center"
+            className="bg-dawn-pink py-8 px-20 flex flex-col items-center justify-start min-h-[600px]"
             id="skills"
         >
             {/* Section title */}
-            <div className="flex justify-between gap-4">
+            <div className="flex justify-between gap-4 pt-10">
                 {selectedCategory && (
                     <button
                         onClick={() => setSelectedCategory(null)}
@@ -24,7 +24,7 @@ function Skills() {
                         <ChevronLeft size={28} />
                     </button>
                 )}
-                <h2 className="font-segoe text-3xl text-dawn-pink font-bold pb-6 mb-6"> 
+                <h2 className="font-segoe text-3xl text-dune font-bold pb-6 mb-6"> 
                     {selectedCategory ? selectedCategory.name : "My Skills"}
                 </h2>
             </div>
@@ -38,13 +38,13 @@ function Skills() {
                             {categories.map((category) => (
                                 <div
                                     key={category.name}
-                                    className="bg-dawn-pink rounded-2xl shadow-md p-6 flex flex-col
+                                    className="bg-kombu-green rounded-2xl shadow-md p-6 flex flex-col
                                                justify-center items-center cursor-pointer h-[200px]
                                                flex-1 min-w-[180px] max-w-[300px]  
                                                hover:scale-105 transition-transform"
                                     onClick={() => setSelectedCategory(category)}
                                 >
-                                    <h3 className="text-xl font-semibold text-dune">
+                                    <h3 className="text-xl font-semibold text-dawn-pink">
                                         {category.name}
                                     </h3>
                                 </div>

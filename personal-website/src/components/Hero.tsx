@@ -16,7 +16,7 @@ function Hero() {
 
                 {/* Center Image */}
                 <div className="relative z-10 w-full">
-                    <div className="absolute bottom-0 left-0 w-full h-30 bg-kombu-green z-0"></div>
+                    <div className="absolute bottom-0 left-0 w-full h-40 bg-kombu-green z-0"></div>
                     <img
                         src={chescaImg}
                         alt="Chesca"
