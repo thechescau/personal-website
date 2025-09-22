@@ -10,7 +10,7 @@ function Projects() {
             {/* Title container  */}
             <div className="text-center mb-8"> 
                 <h2 className="text-3xl font-bold mb-3"> My Recent Work </h2>
-                <h3 className="text-gray-600"> Here are a few recent projects I've been working on. </h3>
+                <h3 className="text-gray-600"> Here are recent projects I've been working on. </h3>
             </div>
 
             {/* Grid layout
