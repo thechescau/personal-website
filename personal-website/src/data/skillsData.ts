@@ -33,9 +33,9 @@ export const categories: Category[] = [
             {name: "C++", percent: 10},
             {name: "Java", percent: 10},
             {name: "Python", percent: 70},
-            {name: "C++", percent: 10},
             {name: "Dart", percent: 5},
             {name: "MySQL", percent: 20},
+
         ]
     },
     {
