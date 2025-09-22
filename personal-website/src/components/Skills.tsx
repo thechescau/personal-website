@@ -3,6 +3,7 @@ import {ChevronLeft} from "lucide-react"
 import {categories, Category} from "../data/skillsData"
 
 function Skills() {
+    // ORIGINAL SKILLS UI
     // track which category card is currently open (null means none)
     const [selectedCategory, setSelectedCategory] = useState<Category | null>(null)
 
