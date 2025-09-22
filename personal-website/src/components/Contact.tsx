@@ -17,15 +17,18 @@ function Contact() {
                 <h3 className="text-2xl text-white font-semibold mb-4"> 
                     Interested in collaborating with me? 
                 </h3>
-                <h4 className="text-lg text-white mb-6"> 
-                    I'm still not a pro but I am open to collaboration. 
-                    Let's grow and expand together. 
+                <h4 className="text-lg text-white mb-1"> 
+                    What better way to learn than swapping tips and tricks over coffee and code?
                 </h4>
+                <h4 className="text-md text-white mb-6 italic"> 
+                    Let's grow, break stuff, and fix it together!
+                </h4>
+                 
                 <button
                     onClick={handleClick} 
-                    className="flex items-center gap-2 px-6 py-3 bg-blue-600 
+                    className="flex items-center gap-2 px-6 py-3 bg-lime-700 
                                 text-white font-medium rounded-full shadow-md 
-                                hover:bg-blue-700 transition mx-auto"
+                                hover:bg-lime-500 transition mx-auto"
                 > 
                     <FiMessageCircle className="text-xl font-inter" />
                     Let's collab! 

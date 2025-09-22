@@ -9,7 +9,7 @@ function Skills() {
     return (
         // main skill container
         <section 
-            className="bg-dark-blue py-12 px-20 flex flex-col items-center justify-center"
+            className="bg-dune py-12 px-20 flex flex-col items-center justify-center"
             id="skills"
         >
             {/* Section title */}
